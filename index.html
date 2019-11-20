@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Check-list</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="list">
         <h2>NEW version check-list</h2>
+        <input type="text" placeholder="Добавить список">
         <label>
             <input type="checkbox">
             <i></i>
@@ -35,6 +38,22 @@
             <i></i>
             <span>5. Lorem ipsum, dolor sit amet </span>
         </label>
+        <div id="buttons">
+            <button class="save">Сохранить</button>
+            <button class="clear">Очистить</button>
+            <button class="showTips">Справка</button>
+        </div>
+    </div>
+    <div id="overlay">
+        <a href="javascript:void(0)" class="closeTips">&times;</a>
+        <ul class="tips">
+            <li>Чтобы спрятать или показать поле ввода, кликните на карандаш</li>
+            <li>Для добавления списка дел напишите текст в поле ввода и нажмите Ввод</li>
+            <li>Чтобы удалить один пункт, наведите на него и нажмите на значок корзины</li>
+            <li>Чтобы удалить все списки дел, нажмите "Очистить"</li>
+            <li>Нажмите "Сохранить", чтобы сохранить список дел на потом</li>
+        </ul>
     </div>
 </body>
+
 </html>
